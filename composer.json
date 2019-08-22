@@ -58,7 +58,7 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ],
-        "post-install-cmd": [
+        "post-update-cmd": [
             "php artisan migrate"
         ]
     }
