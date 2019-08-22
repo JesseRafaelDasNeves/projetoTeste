@@ -59,7 +59,7 @@
             "@php artisan key:generate --ansi"
         ],
         "post-update-cmd": [
-            "php artisan migrate"
+            "php artisan migrate --force"
         ]
     }
 }
