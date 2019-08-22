@@ -28,7 +28,6 @@ class MarcaController extends Controller {
         /* @var $marcas \Illuminate\Pagination\LengthAwarePaginator */
         $marcas      = $this->Marca->orderBy('codigo')->paginate(7);
         $currentPage = $marcas->currentPage();
-
         $success     = session('success');
 
         return view('marca-consulta', compact('marcas', 'currentPage', 'success'));
