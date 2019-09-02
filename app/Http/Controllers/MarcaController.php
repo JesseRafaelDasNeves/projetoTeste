@@ -25,7 +25,7 @@ class MarcaController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        /* @var $marcas \Illuminate\Pagination\LengthAwarePaginator */
+        /* @var $marcas Marca */
         $marcas      = $this->Marca->orderBy('codigo')->paginate(7);
         $currentPage = $marcas->currentPage();
         $success     = session('success');
